@@ -6,8 +6,9 @@
 
 :root {
     --primary-color: #fff;
-    --secondar-color: #9bc5bd;
+    --secondary-color: #9bc5bd;
     --tertiary-color: #024e76;
+    --quad-color: #e6e75e;
 }
 
 body {
@@ -24,24 +25,29 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url("../assets/Images/outside.jpeg");
+    /* background-image: url("../assets/Images/header-image.avif"); */
+    /* background: rgba(76, 175, 80, 0.3); */
     background-size: cover;
-    background-position: 80%;
-    background-attachment: fixed;
+    background-position: 132%;
+    background-size: contain;
+    /* background-attachment: fixed; */
     z-index: 9999;
+    /* background-repeat: no-repeat; */
 }
 
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: var(--primary-color);
+    color: var(--quad-color);
     margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 header a {
+    position: relative;
     text-decoration: none;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    z-index: 1;
 }
 
 header nav {
@@ -64,12 +70,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondar-color);
+    background: var(--tertiary-color);
+    color: var(--primary-color);
     border-radius: 15px;
     text-shadow: none;
 }
-
 /* footer */
 footer {
     background: var(--tertiary-color);
@@ -78,6 +83,13 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* background-image: url("../assets/Images/header-image.avif");
+    /* background: rgba(76, 175, 80, 0.3); */
+    /* background-size: cover;
+    background-position: 132%;
+    background-size: contain; */
+    /* background-attachment: fixed; */
+    /* z-index: 9999; */
 }
 
 footer h2 {
@@ -101,6 +113,14 @@ section {
 }
 
 /* jumbotron */
+.jumbotron {
+    padding: 0px;
+}
+
+.carousel-inner {
+    height: 300px;
+    border: 0px;
+}
 
 /* end jumbotron */
 
@@ -131,7 +151,7 @@ section {
 
 /* contact */
 .contact-us {
-    background: var(--secondar-color);
+    background: var(--secondary-color);
 }
 
 .contact-us h2 {
