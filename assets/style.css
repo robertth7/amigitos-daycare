@@ -8,7 +8,7 @@
     --primary-color: #fff;
     --secondary-color: #9bc5bd;
     --tertiary-color: #024e76;
-    --quad-color: #e6e75e;
+    --quad-color: #fce138;
 }
 
 body {
@@ -124,9 +124,37 @@ section {
 
 /* end jumbotron */
 
-/* steps */
+/* age */
+.ages {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-/* end steps */
+.age {
+    margin: 20px;
+    background: var(--tertiary-color);
+    color: var(--quad-color);
+    flex: 1;
+}
+
+.age img {
+    width: 100%;
+}
+
+.age h3 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.age h4 {
+    font-size: 23px;
+    text-align: center;
+}
+
+/* end age */
 
 /* titles for sections */
 .section-title {
@@ -213,6 +241,10 @@ section {
         text-align: center;
         width: 100%;
         font-size: 25px;
+    }
+
+    section {
+        padding: 25px;
     }
 
     .section-title {
