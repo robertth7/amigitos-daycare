@@ -147,7 +147,13 @@ section {
 
 /* end jumbotron */
 
-/* programs card group bootstrap */
+/* ABOUT US */
+.intro p {
+    text-align: center;
+    font-size: 25px;
+}
+
+/* PROGRAM card group bootstrap */
 .row {
     margin-right: none;
     margin-left: none;
