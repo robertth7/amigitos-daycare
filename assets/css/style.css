@@ -123,10 +123,15 @@ section {
     border-radius: 5px; */
 }
 
-.carousel-inner {
+.carousel {
     width: 100%;
+    background-color: var(--secondary-color);
+}
+.carousel-inner {
+    width: 80%;
     height: 25rem;
     border: 0px;
+    left: 10%;
 }
 
 .carousel img {
@@ -257,6 +262,10 @@ section {
         font-size: 20px;
     }
 
+    .carousel-inner {
+        width: 100%;
+        left: 0%;
+    }
     .carousel-item {
         height: 17rem;
     }
